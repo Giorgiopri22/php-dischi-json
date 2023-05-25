@@ -13,15 +13,6 @@
     <div id="app">
         
             <main>
-                <div class="overlay">
-                    <button class="btn border rounded" @click="closeOverlay()">X</button>
-                    <li class="text-center mb-3 p-2 text-white">
-                        <div id="overlay-img"><img :src="this.currentDisco.poster" alt=""></div>
-                        <div class="text-bold">{{ this.currentDisco.title }}</div>
-                        <div class="text-bold">{{ this.currentDisco.author }}</div>
-                        <div>{{ this.currentDisco.year }} , {{ this.currentDisco.genre }}</div>
-                    </li>
-                </div>
                 <div class="container d-flex justify-content-center align-items-center">
                     <ul class="d-flex flex-wrap justify-content-between">
                         <li v-for="(elem, index) in data" :key=index class="card text-center mb-3 p-2 text-white" @click="overlayDisco(data[index])">
